@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cherry Blossom Photo Album</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1 class="title">💖 Cherry Blossom Photo Album 💖</h1>
+
+        <div class="photo-gallery">
+            <img src="Images/beautifulflower.jpg" alt="Photo 1" onclick="openLightbox(this)">
+            <img src="Images/lightpinkflower.jpg" alt="Photo 2" onclick="openLightbox(this)">
+            <img src="Images/monumentflower.jpg" alt="Photo 3" onclick="openLightbox(this)">
+            <img src="Images/pinkrose.jpg" alt="Photo 4" onclick="openLightbox(this)">
+            <img src="Images/rose.jpg" alt="Photo 5" onclick="openLightbox(this)">
+            <img src="Images/whitepinkflower.jpg" alt="Photo 6" onclick="openLightbox(this)">
+        </div>
+
+        <!--Lightbox Popup-->
+        <div id="lightbox" class="lightbox">
+            <spna class="close" onclick="closeLightbox()">&times;</spna>
+            <img class="lightbox-content" id="lightbox-img">
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
