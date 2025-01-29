@@ -71,3 +71,28 @@ body {
     color: white;
     cursor: pointer;
 }
+
+/*Mobile-Friendly Adjustments*/
+@media (max-width: 600px) {
+    .title {
+        font-size: 28px; /* Smaller title */
+    }
+    
+    .photo-gallery {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Smaller grid */
+        gap: 10px;
+    }
+    
+    .photo-gallery img {
+        border-radius: 10px;
+    }
+    
+    .lightbox-content {
+        max-width: 95%;
+        max-height: 75%;
+    }
+    
+    .close {
+        font-size: 30px; /* Smaller close button */
+    }
+}
